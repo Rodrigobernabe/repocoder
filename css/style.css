@@ -222,7 +222,7 @@ h2{
 /* ----------------------------------- body servicios*-------------------------------------------------------------------*/
 
 .bodyservicios{
-    background-image:url(../img/servicios.jpeg);
+    background-image:url(../img/unnamed.png);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -259,7 +259,7 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -274,7 +274,7 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -289,7 +289,7 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -303,7 +303,7 @@ h2{
     justify-self: center;
     color: #ffffff;
     border-radius: 4%;
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     align-self: center;
     grid-area: Competencia;
     width: 90%;
