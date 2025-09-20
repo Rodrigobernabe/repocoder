@@ -311,7 +311,6 @@ h2{
 }
 
 .cincoaños, .jovenes, .adultos, .Competencia {
-  /* ... (código existente de cada clase) ... */
     transition: transform 0.3s ease;
 }
 
