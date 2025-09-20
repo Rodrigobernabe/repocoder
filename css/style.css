@@ -268,6 +268,7 @@ h2{
     height: 90%;
 }
 
+
 .jovenes {
     text-align: center;
     display: flex;
@@ -307,6 +308,15 @@ h2{
     align-self: center;
     grid-area: Competencia;
     width: 90%;
+}
+
+.cincoaños, .jovenes, .adultos, .Competencia {
+  /* ... (código existente de cada clase) ... */
+    transition: transform 0.3s ease;
+}
+
+.cincoaños:hover, .jovenes:hover, .adultos:hover, .Competencia:hover {
+    transform: scale(1.05);
 }
 
 /* ----------------------------------- body biblioteca*-------------------------------------------------------------------*/
