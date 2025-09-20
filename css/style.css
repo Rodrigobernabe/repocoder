@@ -83,7 +83,8 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;   
+    min-height: 100vh;  
+    
     
 }
 main {
@@ -150,7 +151,7 @@ main {
 /* ----------------------------------- body NOSOTROS*---------------------------*/
 
 .bodynosotros{
-    background-image: url(../img/mujer.png);
+    background-image: url(../img/unnamed.png);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,26 +175,26 @@ h2{
     font-family: "Trade Winds", system-ui;
     display: grid; 
     grid-template-columns: repeat(1fr 1.2fr 0.8fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 10px 10px; 
+    grid-template-rows: auto 1fr; 
     grid-template-areas: 
     "arriba . imagenhwarang"
     "imagenahora abajo imagenhwarang"
 }
 .arriba { grid-area: arriba;
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     border-radius: 2%;
     text-align: center;
     justify-self: center; 
     align-self: center; 
+    
 }
 
 .abajo { 
     grid-area: abajo; 
-    background-color:#0000005c ;
+    background-color:#000000c7 ;
     border-radius: 2%;
     text-align: center;
-
+    margin-top: 3vh;
 
 }
 .imagenahora { 
@@ -202,9 +203,11 @@ h2{
     justify-content: center; 
     align-self: center; 
     width: auto;
+    margin-top: 3vh;
     object-fit: cover; /* Recorta la imagen para que cubra el espacio sin deformarse */
-    border-radius: 5px;
-    height: 300px; 
+    border-radius: 20px;
+    height: 40vh; 
+    
 }
 .imagenhwarang { 
     grid-area: imagenhwarang; 
@@ -212,7 +215,7 @@ h2{
     justify-content: center; 
     align-self: last baseline; 
     height: 300px;
-
+    margin-top: 3vh;
 
 }
 
