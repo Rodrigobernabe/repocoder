@@ -160,7 +160,7 @@ h2{
     color:lab(59.36% 31.97 65.48);    
 }
 
-.container {
+.bodynosotros .containernosotros { /* <--- ¡Importante! Aquí se ha cambiado la regla para que solo aplique a la página "Nosotros" */
     margin: 3%;
     color:#ffffff;
     text-align: left;
@@ -429,7 +429,7 @@ h2{
 .choongmoo { grid-area: choongmoo; }
 
 .videos iframe {
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición del zoom */
     display: block; 
     height: auto; 
 }
@@ -438,9 +438,75 @@ h2{
     transform: scale(1.05); 
 }
 
+/*! ------------------------------------- contacto---------------------------*/
 
+.bodycontacto .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.9fr 1.1fr 1fr;
+    gap: 05px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "cta_contacto cta_contacto cta_contacto cta_contacto"
+    "face insta mapa mapa"
+    "wsp mail mapa mapa";
+}
 
+.cta_contacto { 
+    grid-area: cta_contacto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trade Winds", system-ui;
+}
+.cta_contacto h2 {
+    background-color:#000000c7 ;
+    border-radius: 2%;
+    color: #dfdfde;
 
+}
+.face {
+    grid-area: face;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    grid-area: insta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wsp {
+    grid-area: wsp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail {
+    grid-area: mail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales img,
+.container img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
 
 
 /*! ------------------------------------- FOOTER---------------------------*/
@@ -478,6 +544,7 @@ footer {
 }
 
 /*! ------------------------------------- media query---------------------------*/
+/* MQ INDEX*/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -553,11 +620,56 @@ footer {
 }
 
 
+/*-------------MQ cONTACTO--------------*/
+@media (max-width: 768px) {
+    .bodycontacto .container {
+        /* Cambia el diseño a una sola  */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px; /* espacio entre elementos */
+        grid-template-areas:
+            "cta_contacto"
+            "face"
+            "insta"
+            "wsp"
+            "mail"
+            "mapa";
+    }
 
+    .cta_contacto h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 
+    .face, .insta, .wsp, .mail {
+        justify-content: center;
+    }
 
+    .mapa iframe {
+        width: 100%;
+        height: auto;
+    }
 
+    .redes-sociales img,
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+}
 
+@media (max-width: 480px) {
+    .bodycontacto .container {
+        gap: 10px;
+    }
 
+    .cta_contacto h2 {
+        font-size: 1rem;
+    }
 
-
+    .redes-sociales img,
+    .container img {
+        width: 40px;
+        height: 40px;
+    }
+}
