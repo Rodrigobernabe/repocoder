@@ -6,7 +6,7 @@
 
 /*? ------- RESET ---------*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,41 +18,49 @@
 header {
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     background-position: top;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: #333333d5; /* fondo*/
-    }
+    padding: 1vh;
+    background-color: #33333381;
+    /* fondo*/
+    position: fixed;
+    /* Lo fija en la ventana */
+    top: 0;
+    /* Lo fija arriba */
+    left: 0;
+    /* Lo estira a la izquierda */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    /* FIN PROPIEDADES PARA FIJAR EL HEADER */
+}
 
 
 
-Nav ul li{ 
-    Display: inline-block;    
+Nav ul li {
+    Display: inline-block;
     margin: 0 6px;
-    text-shadow: 10px 01px 10px #000000;
+    text-shadow: 10px 01px 10px #a82b2b;
 }
 
 .barra {
-    list-style:none;
-    text-align:end;    
+    list-style: none;
+    text-align: end;
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 2px;   
+    letter-spacing: 2px;
 
 }
 
-header nav ul li a {    
-    text-decoration: none;
-    color: rgb(249, 249, 249);
-    font-size: 20px;
-}
 
-h1{ 
+
+h1 {
     color: #dfdfde;
     font-family: "Trade Winds", system-ui;
-    font-size: larger;    
+    font-size: larger;
     margin-left: 2%;
     text-shadow: 2px 2px 4px #000000;
     line-height: 1.2;
@@ -62,59 +70,69 @@ h1{
 /*! ------- MAIN ---------*/
 
 .inicio {
-    display: flex; /* Convierte el contenedor en un Flexbox */
+    display: flex;
+    /* Convierte el contenedor en un Flexbox */
     height: 560px;
     align-items: center;
 }
 
-.llamada-a-la-accion{
+.llamada-a-la-accion {
     margin-top: 5%;
     margin-left: 5%;
 }
 
-body{
+body {
     width: 100%;
-    background-image: url(../img/unnamed.png);
+    background-image: url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100%; 
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  
-    
-    
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
 }
+
 main {
     width: 100%;
-    flex-grow: 1; 
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .boton-cta {
-    background-color: #821805; /*coloer de fondo del boton*/
-    color: white; /* Color del texto */
-    padding: 15px 30px; 
-    text-decoration: none; /* Quitar el subrayado  */
-    border-radius: 5px; 
-    font-weight: bold; 
-    text-transform: uppercase; /* texto mayúsculas */
-    margin-top: 10px; /* Un poco de espacio arriba para separarlo del título */
-    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+    background-color: #821805;
+    /*coloer de fondo del boton*/
+    color: white;
+    /* Color del texto */
+    padding: 15px 30px;
+    text-decoration: none;
+    /* Quitar el subrayado  */
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* texto mayúsculas */
+    margin-top: 10px;
+    /* Un poco de espacio arriba para separarlo del título */
+    transition: background-color 0.3s ease;
+    /* Transición al pasar el mouse */
     font-size: 18px;
     text-shadow: 2px 2px 4px #000000;
-} 
+}
 
 .boton-cta:hover {
-    background-color: lab(59.36% 31.97 65.48); /*color secundario cuando paso el mouse */
+    background-color: lab(59.36% 31.97 65.48);
+    /*color secundario cuando paso el mouse */
 }
 
 .invitacion {
-        font-size: 60px;
-        color: rgb(176, 6, 6);
-        font-family: "Trade Winds", system-ui;
-        font-style: oblique;
-        text-shadow: 2px 10px 20px #000000;
-        width: 70%; 
+    font-size: 60px;
+    color: rgb(176, 6, 6);
+    font-family: "Trade Winds", system-ui;
+    font-style: oblique;
+    text-shadow: 2px 10px 20px #000000;
+    width: 70%;
 }
 
 .invitacion p {
@@ -130,24 +148,28 @@ main {
 }
 
 .carousel {
-    width: 32%; 
-    display: flex; 
-    align-items: center; 
+    width: 32%;
+    display: flex;
+    align-items: center;
     margin-right: 5%;
 }
 
-.carousel-inner, .carousel-item, .carousel-item img {
-    height: 100%; /* Asegura que las imágenes ocupen todo el alto del contenedor */
-    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin deformarse */
-    border-radius: 5px; 
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100%;
+    /* Asegura que las imágenes ocupen todo el alto del contenedor */
+    object-fit: cover;
+    /* Recorta la imagen para que cubra el espacio sin deformarse */
+    border-radius: 5px;
 }
 
 
 
 /* ----------------------------------- body NOSOTROS*---------------------------*/
 
-.bodynosotros{
-    background-image: url(../img/unnamed.png);
+.bodynosotros {
+    background-image: url(../img/fondo.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,69 +178,73 @@ main {
     flex-direction: column;
 }
 
-h2{
-    color:lab(59.36% 31.97 65.48);    
+.inicio {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.bodynosotros .containernosotros { /* <--- ¡Importante! Aquí se ha cambiado la regla para que solo aplique a la página "Nosotros" */
-    margin: 3%;
-    color:#ffffff;
-    text-align: left;
+h2 {
+    color: lab(59.36% 31.97 65.48);
+}
+
+.hwarangahora,
+.historiahwarang {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
     text-shadow: 2px 10px 20px #000000;
-    font-size: 20px; 
-    line-height: 1; 
+    font-size: 20px;
     font-family: "Trade Winds", system-ui;
-    display: grid; 
-    grid-template-columns: repeat(1fr 1.2fr 0.8fr); 
-    grid-template-rows: auto 1fr; 
-    grid-template-areas: 
-    "arriba . imagenhwarang"
-    "imagenahora abajo imagenhwarang"
+    padding: 20px;
 }
 
-.arriba { grid-area: arriba;
-    background-color:#000000c7 ;
-    border-radius: 2%;
+.contenido-izquierda {
+    flex: 1;
+    /* Ocupa el espacio dispnible */
+    padding-right: 20px;
+}
+
+.contenido-izquierda h2 {
+    color: lab(59.36% 31.97 65.48);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contenido-izquierda p {
+    font-size: 1.2rem;
+}
+
+.imagen-derecha {
+    flex-shrink: 0;
+    /* no se achica */
+    width: 40%;
+    max-width: 400px;
     text-align: center;
-    justify-self: center; 
-    align-self: center; 
-    
 }
 
-.abajo { 
-    grid-area: abajo; 
-    background-color:#000000c7 ;
-    border-radius: 2%;
-    text-align: center;
-    margin-top: 3vh;
-
+.imagen-derecha img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
 }
-.imagenahora { 
-    grid-area: imagenahora; 
-    display: flex;
-    justify-content: center; 
-    align-self: center; 
-    width: auto;
-    margin-top: 3vh;
-    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin deformarse */
-    border-radius: 20px;
-    height: 40vh; 
-    
-}
-.imagenhwarang { 
-    grid-area: imagenhwarang; 
-    display: flex;
-    justify-content: center; 
-    align-self: last baseline; 
-    height: 300px;
-    margin-top: 3vh;
 
+.historiahwarang {
+    flex-direction: row-reverse;
+}
+
+.historiahwarang .contenido-izquierda {
+    padding-right: 0;
+    padding-left: 20px;
 }
 
 /* ----------------------------------- body servicios*-------------------------------------------------------------------*/
 
-.bodyservicios{
-    background-image:url(../img/unnamed.png);
+.bodyservicios {
+    background-image: url(../img/fondo.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,14 +254,16 @@ h2{
     background-color: #821805;
 }
 
-.containerservicios { 
+.containerservicios {
     display: grid;
     height: 470px;
     margin: 3%;
     text-align: left;
     text-shadow: 2px 10px 20px #000000;
-    font-size: 20px; /* Hace el texto más grande y legible */
-    line-height: 1; /* Aumenta el espacio entre líneas para que no se vean amontonadas */
+    font-size: 20px;
+    /* Hace el texto más grande y legible */
+    line-height: 1;
+    /* Aumenta el espacio entre líneas para que no se vean amontonadas */
     font-family: "Trade Winds", system-ui;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -243,9 +271,9 @@ h2{
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
-    "cincoaños Competencia"
-    "jovenes Competencia"
-    "adultos Competencia";
+        "cincoaños Competencia"
+        "jovenes Competencia"
+        "adultos Competencia";
 
 }
 
@@ -255,7 +283,6 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -271,7 +298,6 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -286,7 +312,6 @@ h2{
     display: block;
     align-content: center;
     color: #ffffff;
-    background-color:#000000c7 ;
     border-radius: 2%;
     justify-self: start;
     align-self: center;
@@ -300,23 +325,28 @@ h2{
     justify-self: center;
     color: #ffffff;
     border-radius: 4%;
-    background-color:#000000c7 ;
     align-self: center;
     grid-area: Competencia;
     width: 90%;
 }
 
-.cincoaños, .jovenes, .adultos, .Competencia {
+.cincoaños,
+.jovenes,
+.adultos,
+.Competencia {
     transition: transform 0.3s ease;
 }
 
-.cincoaños:hover, .jovenes:hover, .adultos:hover, .Competencia:hover {
+.cincoaños:hover,
+.jovenes:hover,
+.adultos:hover,
+.Competencia:hover {
     transform: scale(1.05);
 }
 
 /* ----------------------------------- body biblioteca*-------------------------------------------------------------------*/
-.bodybiblioteca{
-    background-image:url(../img/unnamed.png);
+.bodybiblioteca {
+    background-image: url(../img/fondo.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,7 +356,7 @@ h2{
 }
 
 
-.containerbiblioteca {  
+.containerbiblioteca {
     padding: 5px;
     font-family: "Trade Winds", system-ui;
     display: grid;
@@ -335,44 +365,46 @@ h2{
     gap: 1% 1%;
     grid-auto-flow: row;
     grid-template-areas:
-    "biblioteca  biblioteca"
-    "pdf videos"
-    "pdf videos";
+        "biblioteca  biblioteca"
+        "pdf videos"
+        "pdf videos";
 }
 
 
 .biblioteca {
     color: #ffffff;
-    justify-self: center; 
-    align-self: center; 
+    justify-self: center;
+    align-self: center;
     text-align: center;
     grid-area: biblioteca;
-    width: 90%; 
+    width: 90%;
     border-radius: 4%;
-    background-color:#00000085 ;
 }
 
-.biblioteca h2{
+.biblioteca h2 {
     color: #ffffff;
     padding: 5px;
     font-size: 3vh;
 }
 
 .pdf {
-    display: flex; /* Habilita el flexbox */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    /* Habilita el flexbox */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
     width: 100%;
     height: 100%;
 }
 
-.pdf h2{
-    justify-self: center; 
-    align-self: center; 
+.pdf h2 {
+    justify-self: center;
+    align-self: center;
     text-align: center;
     color: #ffffff;
-    background-color:#00000085 ;
 }
 
 .boton-descarga {
@@ -393,49 +425,67 @@ h2{
 
 .boton-descarga:hover {
     background-color: lab(59.36% 31.97 65.48);
-    color: #821805;
 }
 
 
-.videos {  
+.videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1% 1%;
     grid-auto-flow: row;
     grid-template-areas:
-    "chonji dangun dosan"
-    "whonhyo yulgok joonggun"
-    "toigye hwarang choongmoo";
+        "chonji dangun dosan"
+        "whonhyo yulgok joonggun"
+        "toigye hwarang choongmoo";
     grid-area: videos;
 }
 
-.chonji { grid-area: chonji; }
+.chonji {
+    grid-area: chonji;
+}
 
-.dangun { grid-area: dangun; }
+.dangun {
+    grid-area: dangun;
+}
 
-.dosan { grid-area: dosan; }
+.dosan {
+    grid-area: dosan;
+}
 
-.whonhyo { grid-area: whonhyo; }
+.whonhyo {
+    grid-area: whonhyo;
+}
 
-.yulgok { grid-area: yulgok; }
+.yulgok {
+    grid-area: yulgok;
+}
 
-.joonggun { grid-area: joonggun; }
+.joonggun {
+    grid-area: joonggun;
+}
 
-.toigye { grid-area: toigye; }
+.toigye {
+    grid-area: toigye;
+}
 
-.hwarang { grid-area: hwarang; }
+.hwarang {
+    grid-area: hwarang;
+}
 
-.choongmoo { grid-area: choongmoo; }
+.choongmoo {
+    grid-area: choongmoo;
+}
 
 .videos iframe {
-    transition: transform 0.3s ease-in-out; /* Suaviza la transición del zoom */
-    display: block; 
-    height: auto; 
+    transition: transform 0.3s ease-in-out;
+    /* Suaviza la transición del zoom */
+    display: block;
+    height: auto;
 }
 
 .videos iframe:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 /*! ------------------------------------- contacto---------------------------*/
@@ -447,12 +497,12 @@ h2{
     gap: 05px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-    "cta_contacto cta_contacto cta_contacto cta_contacto"
-    "face insta mapa mapa"
-    "wsp mail mapa mapa";
+        "cta_contacto cta_contacto cta_contacto cta_contacto"
+        "face insta mapa mapa"
+        "wsp mail mapa mapa";
 }
 
-.cta_contacto { 
+.cta_contacto {
     grid-area: cta_contacto;
     text-align: center;
     display: flex;
@@ -460,12 +510,13 @@ h2{
     align-items: center;
     font-family: "Trade Winds", system-ui;
 }
+
 .cta_contacto h2 {
-    background-color:#000000c7 ;
     border-radius: 2%;
     color: #dfdfde;
 
 }
+
 .face {
     grid-area: face;
     display: flex;
@@ -510,13 +561,19 @@ h2{
 
 
 /*! ------------------------------------- FOOTER---------------------------*/
-footer {    
-    background-color: #333333d5; /* fondo*/
-    color: white; 
+footer {
+    background-color: #33333381;
+    /* fondo*/
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    width: 100%; /* Ocupa todo el ancho */
-    position: relative; /* posición relativa para que los elementos hijos se posicionen */
+    padding: 1vh;
+    width: 100%;
+    /* Ocupa todo el ancho */
+    position: fixed;
+    bottom: 0;
+    /* Lo fija abajo */
+    z-index: 1000;
+    /* Asegura que esté por encima */
     background-position: bottom;
 }
 
@@ -527,15 +584,14 @@ footer {
 }
 
 .footer-contenido p {
-    margin-bottom: 9px; /* espacio debajo del texto */
     font-family: "Poppins", sans-serif;
-    font-size: 10   px;
 }
 
 .redes-sociales a img {
     width: 20px;
     height: 20px;
-    margin: 0 10px; /* spacio entre los iconos */
+    margin: 0 10px;
+    /* spacio entre los iconos */
     transition: transform 0.3s ease;
 }
 
@@ -544,12 +600,13 @@ footer {
 }
 
 /*! ------------------------------------- media query---------------------------*/
-/* MQ INDEX*/
+/* ------------------------------------------------------MQ INDEX------------------------------------------------*/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 20px 2%;
         text-align: center;
+        background-color: #070707b9;
+
     }
 
     header h1 {
@@ -571,13 +628,13 @@ footer {
     }
 
     .llamada-a-la-accion {
-        margin: 20px 5%;
         margin-top: 0;
     }
 
     .invitacion {
+        padding-top: 30px;
         font-size: 3rem;
-        width: 100%;
+        width: 90%;
     }
 
     .invitacion p {
@@ -585,15 +642,40 @@ footer {
     }
 
     .carousel {
-        width: 90%;
+        padding-bottom: 30px;
+        width: 100%;
         margin: 20px auto;
         height: auto;
     }
 }
 
+footer {
+    background-color: #070707b9;
+    height: 100px;
+}
+
+.footer-contenido p {
+    font-size: 1rem;
+
+
+}
+
+.redes-sociales a img {
+    width: 18px;
+    height: 18px;
+}
+
 @media (max-width: 480px) {
+
+    header {
+        background-color: #070707b9;
+    }
+
+
     .invitacion {
         font-size: 2rem;
+        padding-top: 40px;
+
     }
 
     .invitacion p {
@@ -603,14 +685,26 @@ footer {
     .boton-cta {
         padding: 10px 20px;
         font-size: 16px;
+
     }
 
     header nav ul li a {
         font-size: 16px;
     }
 
+    .carousel-inner {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        background-color: #070707b9;
+        height: 100px;
+    }
+
     .footer-contenido p {
-        font-size: 0.8rem;
+        font-size: 1rem;
+
+
     }
 
     .redes-sociales a img {
@@ -619,57 +713,266 @@ footer {
     }
 }
 
+/*-----------------------------------------------------------------------------MQ NOSOTROS------------------------------------*/
 
-/*-------------MQ cONTACTO--------------*/
-@media (max-width: 768px) {
-    .bodycontacto .container {
-        /* Cambia el diseño a una sola  */
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 15px; /* espacio entre elementos */
-        grid-template-areas:
-            "cta_contacto"
-            "face"
-            "insta"
-            "wsp"
-            "mail"
-            "mapa";
+@media (max-width: 1020px) {
+    header {
+        flex-direction: column;
+        /* APILA: Título encima de la navegación */
+        padding: 15px 2%;
+        align-items: center;
     }
 
-    .cta_contacto h2 {
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-
-    .face, .insta, .wsp, .mail {
-        justify-content: center;
-    }
-
-    .mapa iframe {
+    header h1 {
         width: 100%;
-        height: auto;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.8rem;
     }
 
-    .redes-sociales img,
-    .container img {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .bodycontacto .container {
-        gap: 10px;
+    .nav {
+        width: 100%;
+        /* La navegación ocupa todo el ancho disponible */
+        justify-content: center !important;
+        margin-top: 10px;
     }
 
-    .cta_contacto h2 {
-        font-size: 1rem;
+    .nav-item {
+        margin: 5px 3px;
+        /* Reduce el margen entre enlaces */
     }
 
-    .redes-sociales img,
-    .container img {
-        width: 40px;
-        height: 40px;
+
+
+    .hwarangahora,
+    .historiahwarang {
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+
+        .historiahwarang {
+            flex-direction: column;
+            /* Anula el row-reverse para apilamiento consistente */
+        }
+
+        .contenido-izquierda {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .imagen-derecha {
+            width: 80%;
+            max-width: none;
+            margin: 20px auto;
+        }
+
+        .footer-contenido {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .redes-sociales {
+            justify-content: center;
+            margin-top: 10px;
+        }
     }
-}
+
+    @media (max-width: 768px) {
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .hwarangahora,
+        .historiahwarang {
+            width: 95%;
+        }
+
+        .nav-link {
+            padding: 8px 5px;
+            /* Más pequeño para que quepan todos los enlaces */
+            font-size: 0.9rem;
+        }
+
+        .contenido-izquierda h2 {
+            font-size: 1.5rem;
+        }
+
+        .contenido-izquierda p {
+            font-size: 1rem;
+        }
+    }
+
+    /*-----------------------------------------------------------------------------MQ SERVICIOS------------------------------------*/
+    @media (max-width: 768px) {
+        .containerservicios {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            gap: 20px;
+            padding: 5%;
+        }
+
+        .cincoaños,
+        .jovenes,
+        .adultos,
+        .Competencia {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+
+    /*-----------------------------------------------------------------------------MQ BIBLIOTECA------------------------------------*/
+
+
+    @media (max-width: 1020px) {
+        .bodybiblioteca {
+            background-size: cover;
+        }
+
+        .containerbiblioteca {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            /* Altura automática */
+            gap: 30px;
+            padding: 20px;
+            grid-template-areas:
+                "biblioteca"
+                "pdf"
+                "videos";
+        }
+
+        .biblioteca h2 {
+            font-size: 2rem;
+            /* Aumenta el texto para mejor lectura */
+            padding-top: 50px;
+        }
+
+        .pdf {
+            padding: 20px 0;
+        }
+
+        .videos {
+            /* Ajuste de la cuadrícula de videos: de 3x3 a 2xN */
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+            /* Reordenamos las áreas para que fluyan en 2 columnas */
+            grid-template-areas:
+                "chonji dangun"
+                "dosan whonhyo"
+                "yulgok joonggun"
+                "toigye hwarang"
+                "choongmoo .";
+            /* El último queda solo en la primera columna */
+        }
+
+        .videos iframe {
+            width: 100%;
+            height: 250px;
+            /* Altura fija para que no varíen */
+        }
+    }
+
+
+    @media (max-width: 600px) {
+        /* Móviles */
+
+        .biblioteca h2 {
+            font-size: 1.2rem;
+        }
+
+        .boton-descarga {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .videos {
+            /* Apilamos los videos en una sola columna */
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 15px;
+            grid-template-areas:
+                "chonji"
+                "dangun"
+                "dosan"
+                "whonhyo"
+                "yulgok"
+                "joonggun"
+                "toigye"
+                "hwarang"
+                "choongmoo";
+        }
+
+        .videos iframe {
+            height: 180px;
+            /* Altura ajustada para pantallas más pequeñas */
+        }
+    }
+
+
+
+
+    /*-----------------------------------------------------------------------------MQ cONTACTO------------------------------------*/
+@media (max-width: 768px) {
+        .bodycontacto .container {
+            padding-top: 50px;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto;
+            gap: 15px;
+            grid-template-areas:
+            "cta_contacto cta_contacto" /
+            "face insta" 
+            "wsp mail" 
+            "mapa mapa"; 
+        }
+    }
+
+    
+
+
+        .cta_contacto h2 {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        .face,
+        .insta,
+        .wsp,
+        .mail {
+            justify-content: center;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        .redes-sociales img,
+        .container img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .bodycontacto .container {
+            gap: 10px;
+        }
+
+        .cta_contacto h2 {
+            font-size: 1rem;
+        }
+
+        .redes-sociales img,
+        .container img {
+            width: 40px;
+            height: 40px;
+        }
+    }
