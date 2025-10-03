@@ -1,0 +1,62 @@
+$fondo-header-footer: #ffffff81;
+$color-titulo: #dfdfde; // Color texto 
+$color-shadow-titulo: #000000; // Sombra del título
+$color-shadow-nav: #a82b2b; // Sombra de la navegación
+$fuente-titulo: "Trade Winds", system-ui;
+$fuente-nav: "Bebas Neue", sans-serif;
+$color-nav-link: #dfdfde; // Color para los enlaces del nav
+$color-nav-link-hover: #d77606; //sombre del nav
+
+header {
+    background: {
+        position: center top; 
+        repeat: no-repeat;
+        size: 100%;
+        color: #33333381;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    .nav {
+        font-family: $fuente-nav;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        .nav-item {
+            margin: 0 6px;            
+            .nav-link {
+                color: $color-nav-link; 
+                text-shadow: 1px 1px 5px $color-shadow-nav; 
+                transition: color 0.3s ease-in-out;
+                font-size: 1.2rem; 
+                font-weight: bold;
+                &:hover,
+                &.active {
+                    color: $color-nav-link-hover; 
+                    text-shadow: 0 0 10px lighten($color-nav-link-hover, 10%); 
+                }
+                &.active {
+                    border-bottom: 2px solid $color-nav-link-hover;
+                }
+            }
+        }
+    }
+    h1 {
+        color: $color-titulo;
+
+        font: {
+            family: $fuente-titulo;
+            size: larger;
+        }
+
+        margin-left: 2%;
+        text-shadow: 2px 2px 4px $color-shadow-titulo;
+        line-height: 1.2;
+        width: 20%;
+    }
+}
