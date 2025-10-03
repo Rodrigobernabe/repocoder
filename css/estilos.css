@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*? ------- FUENTES ---------*/
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trade+Winds&display=swap");
+/*? ------- RESET ---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Nav ul li {
+  Display: inline-block;
+  margin: 0 6px;
+  text-shadow: 10px 1px 10px #a82b2b;
+}
+
+.barra {
+  list-style: none;
+  text-align: end;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #dfdfde;
+  font-family: "Trade Winds", system-ui;
+  font-size: larger;
+  margin-left: 2%;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 1.2;
+  width: 20%;
+}
+
+footer {
+  background-color: rgba(51, 51, 51, 0.5058823529);
+  color: white;
+  text-align: center;
+  padding: 1vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-position: bottom;
+}
+footer .footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-contenido p {
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-contenido .redes-sociales a img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+footer .footer-contenido .redes-sociales a img:hover {
+  transform: scale(1.1);
+}
+
+header {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(51, 51, 51, 0.5058823529);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .nav {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+header .nav .nav-item {
+  margin: 0 6px;
+}
+header .nav .nav-item .nav-link {
+  color: #dfdfde;
+  text-shadow: 1px 1px 5px #a82b2b;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header .nav .nav-item .nav-link:hover, header .nav .nav-item .nav-link.active {
+  color: #d77606;
+  text-shadow: 0 0 10px rgb(248.5384615385, 144.0769230769, 23.4615384615);
+}
+header .nav .nav-item .nav-link.active {
+  border-bottom: 2px solid #d77606;
+}
+header h1 {
+  color: #dfdfde;
+  font-family: "Trade Winds", system-ui;
+  font-size: larger;
+  margin-left: 2%;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 1.2;
+  width: 20%;
+}
+
+.bodyservicios {
+  background-image: url(../img/fondo.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-color: #821805;
+  padding-top: 10px;
+}
+
+.containerservicios {
+  display: grid;
+  height: 470px;
+  margin: 3%;
+  text-align: left;
+  text-shadow: 2px 10px 20px #000000;
+  font-size: 20px;
+  line-height: 1;
+  font-family: "Trade Winds", system-ui;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "cincoaños Competencia" "jovenes Competencia" "adultos Competencia";
+}
+.containerservicios .cincoaños, .containerservicios .jovenes, .containerservicios .adultos {
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  display: block;
+  align-content: center;
+  color: #ffffff;
+  border-radius: 2%;
+  justify-self: start;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+  transition: transform 0.3s ease;
+}
+.containerservicios .cincoaños:hover, .containerservicios .jovenes:hover, .containerservicios .adultos:hover {
+  transform: scale(1.05);
+}
+.containerservicios .cincoaños h2, .containerservicios .jovenes h2, .containerservicios .adultos h2 {
+  color: lab(59.36% 31.97 65.48);
+  font-size: 1.5em;
+}
+.containerservicios .cincoaños p, .containerservicios .jovenes p, .containerservicios .adultos p {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.2;
+}
+.containerservicios .cincoaños {
+  grid-area: cincoaños;
+}
+.containerservicios .jovenes {
+  grid-area: jovenes;
+}
+.containerservicios .adultos {
+  grid-area: adultos;
+}
+.containerservicios .Competencia {
+  text-align: center;
+  justify-self: center;
+  color: #ffffff;
+  border-radius: 4%;
+  align-self: center;
+  grid-area: Competencia;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+.containerservicios .Competencia:hover {
+  transform: scale(1.05);
+}
+.containerservicios .Competencia h2 {
+  color: lab(59.36% 31.97 65.48);
+  font-size: 1.5em;
+}
+.containerservicios .Competencia p {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.2;
+}
+@media (max-width: 1024px) {
+  .containerservicios {
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 20px 0 0 0;
+  }
+  .containerservicios .cincoaños,
+  .containerservicios .jovenes,
+  .containerservicios .adultos,
+  .containerservicios .Competencia {
+    padding: 10px;
+  }
+  .containerservicios .cincoaños h2,
+  .containerservicios .jovenes h2,
+  .containerservicios .adultos h2,
+  .containerservicios .Competencia h2 {
+    font-size: 1.3em;
+  }
+  .containerservicios .cincoaños p,
+  .containerservicios .jovenes p,
+  .containerservicios .adultos p,
+  .containerservicios .Competencia p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 768px) {
+  .containerservicios {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 5%;
+  }
+  .containerservicios .cincoaños,
+  .containerservicios .jovenes,
+  .containerservicios .adultos,
+  .containerservicios .Competencia {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .containerservicios .cincoaños h2,
+  .containerservicios .jovenes h2,
+  .containerservicios .adultos h2,
+  .containerservicios .Competencia h2 {
+    font-size: 1.5em;
+  }
+  .containerservicios .cincoaños p,
+  .containerservicios .jovenes p,
+  .containerservicios .adultos p,
+  .containerservicios .Competencia p {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -25,21 +25,12 @@ header {
     align-items: center;
     padding: 1vh;
     background-color: #33333381;
-    /* fondo*/
     position: fixed;
-    /* Lo fija en la ventana */
     top: 0;
-    /* Lo fija arriba */
     left: 0;
-    /* Lo estira a la izquierda */
     width: 100%;
-    /* Ocupa todo el ancho */
     z-index: 1000;
-    /* Asegura que esté por encima de otros elementos */
-    /* FIN PROPIEDADES PARA FIJAR EL HEADER */
 }
-
-
 
 Nav ul li {
     Display: inline-block;
@@ -54,8 +45,6 @@ Nav ul li {
     letter-spacing: 2px;
 
 }
-
-
 
 h1 {
     color: #dfdfde;
@@ -261,9 +250,7 @@ h2 {
     text-align: left;
     text-shadow: 2px 10px 20px #000000;
     font-size: 20px;
-    /* Hace el texto más grande y legible */
     line-height: 1;
-    /* Aumenta el espacio entre líneas para que no se vean amontonadas */
     font-family: "Trade Winds", system-ui;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -718,7 +705,6 @@ footer {
 @media (max-width: 1020px) {
     header {
         flex-direction: column;
-        /* APILA: Título encima de la navegación */
         padding: 15px 2%;
         align-items: center;
     }
@@ -732,14 +718,12 @@ footer {
 
     .nav {
         width: 100%;
-        /* La navegación ocupa todo el ancho disponible */
         justify-content: center !important;
         margin-top: 10px;
     }
 
     .nav-item {
         margin: 5px 3px;
-        /* Reduce el margen entre enlaces */
     }
 
 
@@ -753,7 +737,6 @@ footer {
 
         .historiahwarang {
             flex-direction: column;
-            /* Anula el row-reverse para apilamiento consistente */
         }
 
         .contenido-izquierda {
@@ -806,26 +789,7 @@ footer {
         }
     }
 
-    /*-----------------------------------------------------------------------------MQ SERVICIOS------------------------------------*/
-    @media (max-width: 768px) {
-        .containerservicios {
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            gap: 20px;
-            padding: 5%;
-        }
 
-        .cincoaños,
-        .jovenes,
-        .adultos,
-        .Competencia {
-            width: 100%;
-            height: auto;
-            padding: 20px;
-            text-align: center;
-        }
-    }
 
     /*-----------------------------------------------------------------------------MQ BIBLIOTECA------------------------------------*/
 
