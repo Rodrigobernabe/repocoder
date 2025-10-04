@@ -38,7 +38,6 @@ header {
                 &:hover,
                 &.active {
                     color: $color-nav-link-hover; 
-                    text-shadow: 0 0 10px lighten($color-nav-link-hover, 10%); 
                 }
                 &.active {
                     border-bottom: 2px solid $color-nav-link-hover;
@@ -48,12 +47,11 @@ header {
     }
     h1 {
         color: $color-titulo;
-
         font: {
             family: $fuente-titulo;
             size: larger;
         }
-
+        
         margin-left: 2%;
         text-shadow: 2px 2px 4px $color-shadow-titulo;
         line-height: 1.2;

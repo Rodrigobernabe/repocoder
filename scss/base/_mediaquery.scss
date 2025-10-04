@@ -1,0 +1,87 @@
+@media (max-width: 1020px) {
+    header {
+        flex-direction: column;
+        padding: 15px 2%;
+        align-items: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 5px 3px;
+    }
+
+
+
+    .hwarangahora,
+    .historiahwarang {
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+
+        .historiahwarang {
+            flex-direction: column;
+        }
+
+        .contenido-izquierda {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .imagen-derecha {
+            width: 80%;
+            max-width: none;
+            margin: 20px auto;
+        }
+
+        .footer-contenido {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .redes-sociales {
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .hwarangahora,
+        .historiahwarang {
+            width: 95%;
+        }
+
+        .nav-link {
+            padding: 8px 5px;
+            /* Más pequeño para que quepan todos los enlaces */
+            font-size: 0.9rem;
+        }
+
+        .contenido-izquierda h2 {
+            font-size: 1.5rem;
+        }
+
+        .contenido-izquierda p {
+            font-size: 1rem;
+        }
+    }
+}
