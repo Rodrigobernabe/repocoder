@@ -1,3 +1,4 @@
+@use "../base/funcionalidades" as *;
 $fondo-header-footer: #ffffff81;
 $color-titulo: #dfdfde; // Color texto 
 $color-shadow-titulo: #000000; // Sombra del título
@@ -31,7 +32,7 @@ header {
             margin: 0 6px;            
             .nav-link {
                 color: $color-nav-link; 
-                text-shadow: 1px 1px 5px $color-shadow-nav; 
+                text-shadow: 1px 1px 5px ; 
                 transition: color 0.3s ease-in-out;
                 font-size: 1.2rem; 
                 font-weight: bold;

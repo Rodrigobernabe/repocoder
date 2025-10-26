@@ -1,5 +1,5 @@
 // Estilos para la página ----------------------------------------------------"index"
-
+@use "../base/funcionalidades" as *;
 body {
     width: 100%;
     background-color: #141313;
@@ -32,25 +32,25 @@ main {
         padding: 0 15px;}
         .invitacion {
             font-size: 130px;
-            color: #ffffff; // Color principal
+            color: $color-texto; 
             font-family: "Trade Winds", system-ui;
             font-style: oblique;
             text-shadow: 2px 10px 20px #000000;
             width: 100%; 
             margin-bottom: 20px;
             p {
-                color: #d75606; 
+                color: $color-principal; 
                 font-size: 130px;
                 letter-spacing: 10px;
                 text-shadow: 2px 10px 20px #000000;
             }}
                 .hwarang {
-                    color: #C0FF31; // Color secundario
+                    color: nth($colores, 2 ); // Color secundario
                     font-size: 120px;
                 }
                 .boton-cta {
-                background-color: #FA574E; 
-                color: white;
+                background-color:$color-principal; 
+                color: $color-texto;
                 padding: 15px 30px;
                 text-decoration: none;
                 border-radius: 5px;
@@ -61,7 +61,7 @@ main {
                 font-size: 18px;
                 text-shadow: 2px 2px 4px #000000;
                 &:hover {
-                    background-color: #C0FF31; // Color secundario en hover
+                    background-color: $color-secundario; // Color secundario en hover
                 }}}
 .ultimoevento {
     text-align: center; 
@@ -70,7 +70,7 @@ main {
     width: 90%; 
     max-width: 1200px; 
     h2 {
-        color: #ffffff; // Color secundario
+        color: $color-texto; 
         font-family: "Bebas Neue", sans-serif; 
         font-size: 3.5rem; 
         letter-spacing: 3px; 
@@ -115,7 +115,7 @@ main {
             margin: 30px auto;
             display: flex;
             align-items: center;
-            color: #ffffff;
+            color: $color-texto;
             text-shadow: 2px 10px 20px #000000;
             font-size: 20px;
             font-family: "Trade Winds", system-ui;
@@ -124,7 +124,7 @@ main {
                 flex: 1; 
                 padding-right: 20px;
                 h2 {
-                    color: #C0FF31;
+                    color: nth($colores,2 );
                     font-size: 2rem;
                     margin-bottom: 15px;}
                 p {
@@ -137,13 +137,13 @@ main {
             margin: 30px auto;
             display: flex;
             align-items: center;
-            color: #ffffff;
+            color: $color-texto;
             text-shadow: 2px 10px 20px #000000;
             font-size: 20px;
             font-family: "Trade Winds", system-ui;
             padding: 20px;
             h2 {
-                color: #C0FF31;
+                color: $color-secundario;
                 font-size: 2rem;
                 margin-bottom: 15px;}
                 p {
@@ -223,11 +223,11 @@ main {
         }
 
         h2{
-            color: #C0FF31;
+            color: $color-secundario;
             font-size: 1.5em;
         }
         p{
-            color: #ffffff;
+            color: $color-texto;
             font-size: 1em;
             line-height: 1.2;
         }
@@ -248,7 +248,6 @@ main {
     .Competencia{
         text-align: center;
         justify-self: center;
-        color: #ffffff;
         border-radius: 4%;
         align-self: center;
         grid-area: Competencia;
@@ -260,11 +259,11 @@ main {
         }
         
         h2{
-            color: #C0FF31;
+            color: $color-secundario;
             font-size: 1.5em;
         }
         p{
-            color: #ffffff;
+            color: $color-texto;
             font-size: 1em;
             line-height: 1.2;
         }
@@ -316,7 +315,7 @@ main {
 }
 }
 
-// Estilos para la página ----------------------------------------------------"servicios"
+// Estilos para la página ----------------------------------------------------"biblioteca"
 
 .bodybiblioteca {
     background-image: url(../img/fondo.jpg);
@@ -325,7 +324,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    background-color: #821805; // Color hardcodeado
 }
 
 .containerbiblioteca {
@@ -341,15 +339,14 @@ main {
         "pdf videos"
         "pdf videos";
     .biblioteca {
-        color: #ffffff;
         justify-self: center;
         align-self: center;
         text-align: center;
         grid-area: biblioteca;
         width: 90%;
         border-radius: 4%;
-        h2 { // Anidamiento: .biblioteca h2
-            color: #ffffff;
+        h2 { 
+            color: $color-texto;
             padding: 5px;
             font-size: 3vh;
         }
@@ -369,8 +366,8 @@ main {
             color: #ffffff;
         }
             .boton-descarga {
-                background-color: #821805;
-                color: white;
+                background-color: $color-principal;
+                color:$color-texto;
                 padding: 15px 30px;
                 text-decoration: none;
                 border-radius: 5px;
@@ -383,7 +380,7 @@ main {
                 border: none;
                 cursor: pointer;
                     &:hover { 
-                        background-color:#C0FF31;
+                        background-color:$color-secundario;
                     }
             }
         }
@@ -438,7 +435,7 @@ main {
     }
 }
 
-// Estilos para la página ----------------------------------------------------"servicios"
+// Estilos para la página ----------------------------------------------------"contacto"
 
 .bodycontacto {
     .container {
@@ -460,7 +457,7 @@ main {
             font-family: "Trade Winds", system-ui;
             h2 {
                 border-radius: 2%;
-                color: #dfdfde;
+                color: $color-texto;
             }
         }
         .face {

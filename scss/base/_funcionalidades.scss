@@ -1,10 +1,26 @@
 //variables
 // Colores y transparencias
 $fondo-header-footer: #33333381; // Fondo semi-transparente para header y footer
-$color-titulo: #dfdfde; // Color del texto principal del título (H1)
-$color-shadow-titulo: #000000; // Color de la sombra del título
-$color-shadow-nav: #a82b2b; // Color de la sombra del texto de la navegación
 
 // Fuentes
 $fuente-titulo: "Trade Winds", system-ui;
 $fuente-nav: "Bebas Neue", sans-serif;
+
+
+// Colores principales 
+$color-principal: #FA574E;       
+$color-secundario: #C0FF31;      
+$color-texto: #ffffff;      
+$color-acento-dos: #821805;      
+
+// Colores de texto y fondo
+$color-fondo-oscuro: #141313;   
+$color-texto-claro: #ffffff;    
+
+// Otros colores
+$color-sombra-negra: #000000;   
+$color-contacto-claro: #dfdfde;  
+
+//lista
+$colores: #FA574E, #C0FF31, #ffffff
+

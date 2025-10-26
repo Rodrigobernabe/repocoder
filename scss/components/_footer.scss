@@ -1,7 +1,9 @@
+@use "../base/funcionalidades" as *;
+
 $fondo-header-footer: #33333381; 
 footer {
     background-color: $fondo-header-footer;
-    color: white;
+    color:$color-texto;
     text-align: center;
     padding: 1vh;
     width: 100%;
