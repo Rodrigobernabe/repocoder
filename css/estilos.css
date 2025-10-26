@@ -158,7 +158,13 @@ header .nav .nav-item {
   margin: 0 6px;
 }
 header .nav .nav-item .nav-link {
-  color: #dfdfde;
+  color: #FA574E;
+  text-shadow: 1px 1px 5px #a82b2b;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header .nav .nav-item .n  color: #dfdfde;
   text-shadow: 1px 1px 5px #a82b2b;
   transition: color 0.3s ease-in-out;
   font-size: 1.2rem;
@@ -397,6 +403,3 @@ header h1 {
 .bodynosotros .inicio .historiahwarang .contenido-izquierda {
   padding-right: 0;
   padding-left: 20px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
