@@ -1,3 +1,179 @@
+// Estilos para la página ----------------------------------------------------"index"
+
+body {
+    width: 100%;
+    background-color: #141313;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.inicio {
+    flex-direction: column;
+    height: 560px;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    .llamada-a-la-accion {
+        margin-top: 5%; 
+        margin-left: 0; 
+        width: 100%; 
+        padding: 0 15px;}
+        .invitacion {
+            font-size: 130px;
+            color: #ffffff; // Color principal
+            font-family: "Trade Winds", system-ui;
+            font-style: oblique;
+            text-shadow: 2px 10px 20px #000000;
+            width: 100%; 
+            margin-bottom: 20px;
+            p {
+                color: #d75606; 
+                font-size: 130px;
+                letter-spacing: 10px;
+                text-shadow: 2px 10px 20px #000000;
+            }}
+                .hwarang {
+                    color: #C0FF31; // Color secundario
+                    font-size: 120px;
+                }
+                .boton-cta {
+                background-color: #FA574E; 
+                color: white;
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+                font-size: 18px;
+                text-shadow: 2px 2px 4px #000000;
+                &:hover {
+                    background-color: #C0FF31; // Color secundario en hover
+                }}}
+.ultimoevento {
+    text-align: center; 
+    padding: 40px 15px 20px; 
+    margin: 0 auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    h2 {
+        color: #ffffff; // Color secundario
+        font-family: "Bebas Neue", sans-serif; 
+        font-size: 3.5rem; 
+        letter-spacing: 3px; 
+        text-transform: uppercase; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        border-bottom: 5px double #FA574E; // Color principal
+        display: inline-block; 
+        padding-bottom: 10px; 
+        margin-bottom: 20px; 
+    }
+}
+.carousel {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    margin: 20px auto; 
+    &-inner,
+    &-item,
+    &-item img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+
+
+// Estilos para la página ----------------------------------------------------"Nosotros"
+.bodynosotros {
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .inicio {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .hwarangahora {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 2px 10px 20px #000000;
+            font-size: 20px;
+            font-family: "Trade Winds", system-ui;
+            padding: 20px;
+            .contenido-izquierda {
+                flex: 1; 
+                padding-right: 20px;
+                h2 {
+                    color: #C0FF31;
+                    font-size: 2rem;
+                    margin-bottom: 15px;}
+                p {
+                    font-size: 1.2rem;}
+                
+            }
+        }
+        .historiahwarang {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 2px 10px 20px #000000;
+            font-size: 20px;
+            font-family: "Trade Winds", system-ui;
+            padding: 20px;
+            h2 {
+                color: #C0FF31;
+                font-size: 2rem;
+                margin-bottom: 15px;}
+                p {
+                font-size: 1.2rem;}
+
+        }
+        .imagen-derecha {
+            flex-shrink: 0; 
+            width: 30%;
+            max-width: 300px;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+
+        .historiahwarang {
+            flex-direction: row-reverse;
+            .contenido-izquierda {
+                padding-right: 0;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
 // Estilos para la página ----------------------------------------------------"servicios"
 
 .bodyservicios {
@@ -8,7 +184,6 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    background-color: #821805;
     padding-top: 10px
 }
 
@@ -37,20 +212,18 @@
         display: flex;
         display: block;
         align-content: center;
-        color: #ffffff;
         border-radius: 2%;
         justify-self: start;
         align-self: center;
         width: 90%;
         height: 90%;
-        transition: transform 0.3s ease; 
-        
+        transition: transform 0.3s ease;         
         &:hover {
             transform: scale(1.05); 
         }
 
         h2{
-            color: lab(59.36% 31.97 65.48);
+            color: #C0FF31;
             font-size: 1.5em;
         }
         p{
@@ -87,7 +260,7 @@
         }
         
         h2{
-            color: lab(59.36% 31.97 65.48);
+            color: #C0FF31;
             font-size: 1.5em;
         }
         p{
@@ -143,78 +316,202 @@
 }
 }
 
-// Estilos para la página ----------------------------------------------------"Nosotros"
-.bodynosotros {
+// Estilos para la página ----------------------------------------------------"servicios"
+
+.bodybiblioteca {
     background-image: url(../img/fondo.jpg);
-    width: 90%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    .inicio {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        .hwarangahora {
-            width: 90%;
-            margin: 30px auto;
-            display: flex;
-            align-items: center;
-            color: #ffffff;
-            text-shadow: 2px 10px 20px #000000;
-            font-size: 20px;
-            font-family: "Trade Winds", system-ui;
-            padding: 20px;
-            .contenido-izquierda {
-                flex: 1; 
-                padding-right: 20px;
-                h2 {
-                    color: lab(59.36% 31.97 65.48);
-                    font-size: 2rem;
-                    margin-bottom: 15px;}
-                p {
-                    font-size: 1.2rem;}
-                
-            }
-        }
-        .historiahwarang {
-            width: 90%;
-            margin: 30px auto;
-            display: flex;
-            align-items: center;
-            color: #ffffff;
-            text-shadow: 2px 10px 20px #000000;
-            font-size: 20px;
-            font-family: "Trade Winds", system-ui;
-            padding: 20px;
-            h2 {
-                color: lab(59.36% 31.97 65.48);
-                font-size: 2rem;
-                margin-bottom: 15px;}
-                p {
-                font-size: 1.2rem;}
+    background-color: #821805; // Color hardcodeado
+}
 
+.containerbiblioteca {
+    padding: 5px;
+    font-family: "Trade Winds", system-ui;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.7fr 1.3fr 1fr;
+    gap: 1% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "biblioteca biblioteca"
+        "pdf videos"
+        "pdf videos";
+    .biblioteca {
+        color: #ffffff;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        grid-area: biblioteca;
+        width: 90%;
+        border-radius: 4%;
+        h2 { // Anidamiento: .biblioteca h2
+            color: #ffffff;
+            padding: 5px;
+            font-size: 3vh;
         }
-        .imagen-derecha {
-            flex-shrink: 0; 
-            width: 30%;
-            max-width: 300px;
+    }
+        .pdf {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            grid-area: pdf; 
+        h2 { 
+            justify-self: center;
+            align-self: center;
             text-align: center;
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 10px;
-                object-fit: cover;
+            color: #ffffff;
+        }
+            .boton-descarga {
+                background-color: #821805;
+                color: white;
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+                font-size: 18px;
+                text-shadow: 2px 2px 4px #000000;
+                border: none;
+                cursor: pointer;
+                    &:hover { 
+                        background-color:#C0FF31;
+                    }
             }
         }
 
-        .historiahwarang {
-            flex-direction: row-reverse;
-            .contenido-izquierda {
-                padding-right: 0;
-                padding-left: 20px;
+    .videos {
+        display: grid;
+        margin-bottom: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5% 1%;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "chonji dangun dosan"
+            "whonhyo yulgok joonggun"
+            "toigye hwarang choongmoo";
+        grid-area: videos;
+        .chonji {
+            grid-area: chonji;
+        }
+        .dangun {
+            grid-area: dangun;
+        }
+        .dosan {
+            grid-area: dosan;
+        }
+        .whonhyo {
+            grid-area: whonhyo;
+        }
+        .yulgok {
+            grid-area: yulgok;
+        }
+        .joonggun {
+            grid-area: joonggun;
+        }
+        .toigye {
+            grid-area: toigye;
+        }
+        .hwarang {
+            grid-area: hwarang;
+        }
+        .choongmoo {
+            grid-area: choongmoo;
+        }
+        iframe {
+            transition: transform 0.3s ease-in-out;
+            display: block;
+            height: auto;
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }
+}
+
+// Estilos para la página ----------------------------------------------------"servicios"
+
+.bodycontacto {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.9fr 1.1fr 1fr;
+        gap: 5px; 
+        grid-auto-flow: row;
+        grid-template-areas:
+            "cta_contacto cta_contacto cta_contacto cta_contacto"
+            "face insta mapa mapa"
+            "wsp mail mapa mapa";
+        .cta_contacto {
+            grid-area: cta_contacto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Trade Winds", system-ui;
+            h2 {
+                border-radius: 2%;
+                color: #dfdfde;
+            }
+        }
+        .face {
+            grid-area: face;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .insta {
+            grid-area: insta;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wsp {
+            grid-area: wsp;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mail {
+            grid-area: mail;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mapa {
+            grid-area: mapa;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+.redes-sociales img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.face a:hover img,
+.insta a:hover img,
+.wsp a:hover img,
+.mail a:hover img {
+    transform: scale(1.15) rotate(5deg); 
+    filter: brightness(1.2); 
+    cursor: pointer;
 }
